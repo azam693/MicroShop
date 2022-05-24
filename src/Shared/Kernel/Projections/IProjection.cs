@@ -1,4 +1,4 @@
-﻿namespace Kernel.Marten.Projections;
+﻿namespace Kernel.Projections;
 
 public interface IProjection
 {
