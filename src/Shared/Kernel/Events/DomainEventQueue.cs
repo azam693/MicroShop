@@ -6,7 +6,7 @@ public abstract class DomainEventQueue
     
     public IReadOnlyCollection<DomainEvent> DequeueEvents()
     {
-        var dequeuedEvents = _domainEvents.AsReadOnly();
+        var dequeuedEvents = _domainEvents.ToArray();
         _domainEvents.Clear();
 
         return dequeuedEvents;

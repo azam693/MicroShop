@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Catalog.Infrastructure.Configurations.Products;
 
-public class ProductImageConfiguration : IEntityTypeConfiguration<ProductImage>
+public class ProductImageConfiguration : IEntityTypeConfiguration<ProductCombinationImage>
 {
-    public void Configure(EntityTypeBuilder<ProductImage> builder)
+    public void Configure(EntityTypeBuilder<ProductCombinationImage> builder)
     {
         builder.HasKey(builder => builder.Id);
         builder.Property(builder => builder.Path)

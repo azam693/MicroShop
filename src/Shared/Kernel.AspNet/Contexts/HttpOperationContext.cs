@@ -1,6 +1,7 @@
 ﻿using Kernel.Contexts;
+using Microsoft.AspNetCore.Http;
 
-namespace Catalog.Api.Common.Contexts;
+namespace Kernel.AspNet.Contexts;
 
 public class HttpOperationContext : IOperationContext
 {

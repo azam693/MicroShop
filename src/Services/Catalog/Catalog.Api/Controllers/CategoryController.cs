@@ -4,9 +4,6 @@ using Catalog.Application.Services.Categories.DeleteCategory;
 using Catalog.Application.Services.Categories.GetCategories;
 using Catalog.Application.Services.Categories.GetCategoryById;
 using Catalog.Application.Services.Categories.UpdateCategory;
-using Catalog.Application.Services.Products.CreateProduct;
-using Catalog.Application.Services.Products.DeleteProduct;
-using Catalog.Application.Services.Products.UpdateProduct;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

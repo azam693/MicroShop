@@ -9,7 +9,7 @@ public interface ICatalogContext
 {
     DbSet<Category> Categories { get; set; }
     DbSet<Product> Products { get; set; }
-    DbSet<ProductImage> ProductImages { get; set; }
+    DbSet<ProductCombinationImage> ProductImages { get; set; }
 
     Task<int> SaveAsync(CancellationToken cancellationToken = default);
 }

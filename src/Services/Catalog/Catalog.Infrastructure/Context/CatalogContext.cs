@@ -21,7 +21,7 @@ public class CatalogContext : DbContext, ICatalogContext
     public DbSet<CombinationOption> CombinationOptions { get; set; }
     public DbSet<Product> Products { get; set; }
     public DbSet<ProductCombination> ProductCombinations { get; set; }
-    public DbSet<ProductImage> ProductImages { get; set; }
+    public DbSet<ProductCombinationImage> ProductImages { get; set; }
     
     public async Task<int> SaveAsync(CancellationToken cancellationToken = default)
     {

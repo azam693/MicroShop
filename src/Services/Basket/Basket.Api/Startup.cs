@@ -1,8 +1,8 @@
-﻿using Catalog.Api.Common;
-using Catalog.Application.Common;
-using Catalog.Infrastructure.Common;
+﻿using Basket.Api.Common;
+using Basket.Application.Common;
+using Basket.Infrastructure.Common;
 
-namespace Catalog.Api;
+namespace Basket.Api;
 
 public class Startup
 {
@@ -18,17 +18,16 @@ public class Startup
         services.AddApplication();
         services.AddInfrastructure(Configuration);
         services.AddApi();
-
+        
         services.AddControllers();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         app.UseApi(env);
-        
+
         app.UseRouting();
         app.UseAuthentication();
-
         app.UseEndpoints(endpoints =>
         {
             endpoints.MapControllers();
